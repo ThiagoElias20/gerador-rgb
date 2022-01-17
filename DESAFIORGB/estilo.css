@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+body {
+  background: #363940;
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: bold;
+color: #FFFFFF;
+}
+h1 { 
+  
+  position: absolute;
+  width: 575px;
+  height: 1px;
+  left: 770px;
+  top: 174px;
+  font-family: 'IBM Plex Mono';
+ font-style: normal;
+ font-weight: bold;
+ font-size: 58px;
+ line-height: 75px;
+ display: flex;
+  align-items: center;
+text-align: center;
+
+
+}
+
+#retang1 {
+  position: absolute;
+  width: 714px;
+  height: 65px;
+  left: 601px;
+  top: 267px;
+  
+  background: #44474E;
+  border-radius: 3px;
+
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+
+}
+
+#bigretang {
+  position: absolute;
+width: 714px;
+height: 476px;
+left: 601px;
+top: 362px;
+
+background: #44474E;
+border-radius: 3px;
+}
+
+#vermei {
+  position: absolute;
+width: 160px;
+height: 48px;
+left: 699px;
+top: 399px;
+justify-content: center;
+
+background: #FF817E;
+border-radius: 3px;
+display: flex; align-items: center
+
+}
+#verde {
+  position: absolute;
+width: 160px;
+height: 48px;
+left: 878px;
+top: 399px;
+justify-content: center;
+
+background: #3FB73D;
+border-radius: 3px;
+display: flex; align-items: center
+}
+#azul {
+  position: absolute;
+width: 160px;
+height: 48px;
+left: 1057px;
+top: 399px;
+justify-content: center;
+  
+background: #515AAB;
+border-radius: 3px;
+display: flex; align-items: center
+}
+
+#bola {
+  position: absolute;
+  border-radius: 50%;
+width: 226px;
+height: 226px;
+left: 845px;
+top: 497px;
+
+background: #5D79B8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#valor {
+  position: absolute;
+  background-color: #363940;
+width: 318px;
+height: 22px;
+left: 799px;
+top: 771px;
+
+font-family: IBM Plex Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+
+
+}
+
+#creditos {
+  position: absolute;
+width: 318px;
+height: 22px;
+left: 799px;
+top: 908px;
+
+
+font-family: IBM Plex Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+#git {
+  width: 318px;
+  height: 22px;
+  left: 799px;
+  top: 908px;
+
+  font-family: IBM Plex Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+#bigwitretang {
+  position: absolute;
+width: 714px;
+height: 476px;
+left: 601px;
+top: 362px;
+
+background: #E5E5E5;
+border-radius: 3px;
+}
+
+#vectorpre {
+  visibility: hidden;
+}

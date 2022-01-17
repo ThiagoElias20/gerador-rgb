@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+</head>
+<body>
+  <h1>Calculando medias</h1>
+  <p>Abaixo escreva suas notas e calcularemos a media para você.</p>
+  <input type="number" name="nt1" id="nt1">
+  <input type="number" name="nt2" id="nt2">
+  <button onclick="calcular()">Calcule</button>
+  <div id="res">
+
+
+  </div>
+
+  <script type="text/javascript">
+function calcular() {
+  var n1 = Number(document.getElementById('nt1').value)
+  var n2 = Number(document.getElementById('nt2').value)
+  var md = Number(n1 + n2) / 2
+  var res = document.getElementById('res')
+  if (md == 10 ) {
+    res.innerText = "Aprovado com distinção."
+    
+  } else if (md >= 7) {
+    res.innerText = "Aprovado."
+
+  } else  {
+    res.innerText = "Reprovado."
+  }
+}
+
+
+  </script>
+
+</body>
+</html>
+
+<!--Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+
+    A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+    A mensagem "Reprovado", se a média for menor do que sete;
+    A mensagem "Aprovado com Distinção", se a média for igual a dez.-->
+    <!--FEITO PORRA LESGOOO-->

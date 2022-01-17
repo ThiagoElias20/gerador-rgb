@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador RGB</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" type="image/png" href="fav.png" />
+</head>
+<body onload="realtimeclock()">
+  <h1>Gerador RGB</h1>
+  <div id=retang1>
+    &nbsp &nbsp  <img src="vector.png" alt="vector" id="vector"> 
+    <img src="vectorpre.png" alt="vectorpre" id="vectorpre">
+    &nbsp  <div id="date"></div>  &nbsp - &nbsp  <div id="clock"></div>
+  </div>
+  <div id="bigretang" class="bigwitretang">
+  </div>
+
+    <div id="vermei"> 
+      <input type="range" name="vermei" id="Rvermei" value="255" min="0" max="255">
+    </div>
+    
+    <div id="verde">
+      <input type="range" name="verde" id="Rverde" value="255" min="0" max="255">
+    </div>
+    
+  <div id="azul">
+    <input type="range" name="azul" id="Razul" value="255" min="0" max="255">
+  </div>
+
+  <div id="bola"></div>
+
+  <input type="text" id="valor" value="rgb(255,255,255)">
+  <p id="creditos"><a href="https://github.com/ThiagoElias22" id="git" >Thiago Elias</a> Desenvolveu </p>
+
+  
+  <script>
+ function realtimeclock() {
+ var rtclock = new Date();
+
+ var hours = rtclock.getHours();
+ var minutes = rtclock.getMinutes();
+ var month = rtclock.getMonth() + 1;
+ var day = rtclock.getDate();
+ var year = rtclock.getFullYear();
+
+
+ hours = ("0" + hours).slice(-2);
+ minutes = ("0" + minutes).slice(-2);
+ day = ("0" + day).slice(-2);
+ month = ("0" + month).slice(-2);
+ 
+
+ document.getElementById('date').innerHTML =
+ day + " / " + month + " / " + year
+
+ document.getElementById('clock').innerHTML = 
+  hours + " : " + minutes 
+  var t = setTimeout(realtimeclock, 500);
+
+  var res = document.getElementById("res")
+
+  if (hours < 18) {
+  document.getElementById("bigretang").style.backgroundColor = "#E5E5E5";
+  document.getElementById("retang1").style.backgroundColor = "#F6F6F6";
+  document.body.style.backgroundColor = "#FFFFFF";
+  document.body.style.color = "#363940";
+  document.getElementById("vector").style.visibility = "hidden"
+  document.getElementById("vectorpre").style.visibility = "visible"
+  document.getElementById("valor").style.backgroundColor = "#E5E5E5";
+
+   
+
+}
+
+}
+
+
+ function resultcor() {
+
+  var vermei = document.getElementById("Rvermei").value;
+
+  var verde = document.getElementById("Rverde").value;
+
+  var azul = document.getElementById("Razul").value;
+
+  var result = 'rgb(' + vermei + ',' + verde + ',' + azul + ')';
+
+  document.getElementById('bola').style.backgroundColor = result;
+
+  document.getElementById('valor').value = result;
+
+ }
+
+  document.getElementById('Rvermei').addEventListener('input', resultcor);
+  
+
+  document.getElementById('Rverde').addEventListener('input', resultcor);
+  
+
+  document.getElementById('Razul').addEventListener('input', resultcor);
+
+  </script>
+</body>
+</html>
