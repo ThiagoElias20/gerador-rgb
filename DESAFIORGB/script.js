@@ -31,6 +31,7 @@ function realtimeclock() {
    document.getElementById("vector").style.visibility = "hidden"
    document.getElementById("vectorpre").style.visibility = "visible"
    document.getElementById("valor").style.backgroundColor = "#E5E5E5";
+   document.getElementById("git").style.color ="#44474E"
  
     
  
