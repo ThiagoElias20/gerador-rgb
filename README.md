@@ -5,3 +5,5 @@ Esse gerador foi desenvolvido por mim usando tecnologias frontend (Javascript, C
 # Versão a noite 🌃
 
 ![Alt Text](https://gyazo.com/bc18310c30d42383f1cdc153c4a6c189.gif)
+
+![Alt Text](https://gyazo.com/d1067508a0a9c9670d66ff621f574820.gif)
