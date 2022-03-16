@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador RGB</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" type="image/png" href="fav.png" />
+</head>
+<body onload="realtimeclock()">
+  <h1>Gerador RGB</h1>
+  <div id=retang1>
+    &nbsp &nbsp  <img src="vector.png" alt="vector" id="vector"> 
+    <img src="vectorpre.png" alt="vectorpre" id="vectorpre">
+    &nbsp  <div id="date"></div>  &nbsp - &nbsp  <div id="clock"></div>
+  </div>
+  <div id="bigretang" class="bigwitretang">
+  </div>
+
+    <div id="vermei"> 
+      <input type="range" name="vermei" id="Rvermei" value="255" min="0" max="255">
+    </div>
+    
+    <div id="verde">
+      <input type="range" name="verde" id="Rverde" value="255" min="0" max="255">
+    </div>
+    
+  <div id="azul">
+    <input type="range" name="azul" id="Razul" value="255" min="0" max="255">
+  </div>
+
+  <div id="bola"></div>
+
+  <input type="text" id="valor" value="rgb(255,255,255)">
+  <p id="creditos"><a href="https://github.com/ThiagoElias22" id="git" >Thiago Elias</a> Desenvolveu </p>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
